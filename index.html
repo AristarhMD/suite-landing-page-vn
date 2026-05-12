@@ -9,78 +9,106 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Suite landing page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="content-container">
-      <header class="flex flex-col justify-center gap-16 px-4 pt-6 mb-25">
+      <header
+        class="flex flex-col justify-center gap-16 px-4 pt-6 mb-25 md:gap-20 md:px-8 md:pt-8 xl:w-[77%] xl:pt-12.5 xl:px-0 xl:mx-auto xl:mb-33.75"
+      >
         <nav class="flex justify-between items-center">
           <img src="assets/logo.svg" alt="suite company logo" />
           <button class="btn-nav preset-6">Request Beta Access</button>
         </nav>
 
-        <div class="flex flex-col justify-center items-start gap-10">
-          <div class="flex flex-col items-center gap-6">
-            <h1 class="preset-1-mobile">
-              A
-              <span class="relative preset-1-mobile-bold after:curve-header"
-                >super solution</span
-              >
-              for your
-              <span class="preset-1-mobile-bold">business.</span>
-            </h1>
-            <p class="preset-5 text-neutral-500">
-              Our marketing and sales automations help you scale your outreach
-              to get more leads for your company.
-            </p>
+        <main
+          class="flex flex-col gap-16 items-center xl:flex-row xl:justify-between xl:min-w-277.5 xl:mx-auto"
+        >
+          <div
+            class="relative md:flex md:flex-row md:items-center md:h-120 xl:h-150"
+          >
+            <div
+              class="flex flex-col justify-center items-start gap-10 md:w-9/10 md:mt-auto md:mb-15 xl:w-158.75 xl:my-auto"
+            >
+              <div class="flex flex-col items-center gap-6 md:items-start">
+                <h1 class="preset-1-mobile md:preset-1-tablet xl:preset-1">
+                  A
+                  <span
+                    class="relative preset-1-mobile-bold md:preset-1-table-bold xl:preset-1-bold after:curve-header"
+                    >super solution</span
+                  >
+                  <br />
+                  for your
+                  <span
+                    class="preset-1-mobile-bold md:md:preset-1-table-bold xl:preset-1-bold"
+                    >business.</span
+                  >
+                </h1>
+                <p class="preset-5 text-neutral-500 md:w-[55%]">
+                  Our marketing and sales automations help you scale your
+                  outreach to get more leads for your company.
+                </p>
+              </div>
+              <button class="btn-hero preset-6">Request Beta Access</button>
+            </div>
+
+            <div
+              class="img-container md:absolute md:h-full md:top-0 md:left-106 md:-z-10 xl:w-full xl:left-73"
+            >
+              <picture class="h-full">
+                <source
+                  media="(min-width:768px)"
+                  srcset="assets/image-hero-portrait.webp"
+                />
+                <img
+                  class="w-full h-full object-contain"
+                  class="object-cover"
+                  src="assets/image-hero-landscape.webp"
+                  alt="Hero image, phone with some bars on it"
+                />
+              </picture>
+            </div>
           </div>
-          <button class="btn-hero preset-6">Request Beta Access</button>
-        </div>
 
-        <div class="img-container">
-          <picture>
-            <source
-              media="(min-width:768px)"
-              srcset="assets/image-hero-portrait.webp"
-            />
-            <img
-              src="assets/image-hero-landscape.webp"
-              alt="Hero image, phone with some bars on it"
-            />
-          </picture>
-        </div>
+          <div
+            class="flex flex-col gap-10 md:w-full md:flex-row md:justify-around xl:flex-col xl:w-47.5 xl:gap-16"
+          >
+            <article
+              class="flex flex-col justify-center items-center gap-1 xl:items-start"
+            >
+              <p class="preset-2-bold text-neutral-900">2K+</p>
+              <p class="preset-7 uppercase text-neutral-500">companies</p>
+            </article>
 
-        <div class="flex flex-col gap-10">
-          <article class="flex flex-col justify-center items-center gap-1">
-            <p class="preset-2-bold text-neutral-900">2K+</p>
-            <p class="preset-7 uppercase text-neutral-500">companies</p>
-          </article>
+            <article
+              class="flex flex-col justify-center items-center gap-1 xl:items-start"
+            >
+              <p class="preset-2-bold text-neutral-900">8</p>
+              <p class="preset-7 uppercase text-neutral-500">languages</p>
+            </article>
 
-          <article class="flex flex-col justify-center items-center gap-1">
-            <p class="preset-2-bold text-neutral-900">8</p>
-            <p class="preset-7 uppercase text-neutral-500">languages</p>
-          </article>
-
-          <article class="flex flex-col justify-center items-center gap-1">
-            <p class="preset-2-bold text-neutral-900">1.2M</p>
-            <p class="preset-7 uppercase text-neutral-500">leads</p>
-          </article>
-        </div>
+            <article
+              class="flex flex-col justify-center items-center gap-1 xl:items-start"
+            >
+              <p class="preset-2-bold text-neutral-900">1.2M</p>
+              <p class="preset-7 uppercase text-neutral-500">leads</p>
+            </article>
+          </div>
+        </main>
       </header>
 
       <main
-        class="px-6 pb-10 flex flex-col justify-center items-center relative after:blackbackground mb-14"
+        class="px-6 pb-10 flex flex-col justify-center items-center relative after:blackbackground mb-14 md:mx-8 md:px-12 md:pb-16 md:mb-20 xl:w-[77%] xl:px-31.25 xl:pb-0 xl:mx-auto xl:grid xl:grid-cols-[360px_auto_350px]"
       >
-        <header class="mb-7">
-          <picture
-            class="bg-[url('assets/pattern-blur.svg')] bg-bottom bg-no-repeat"
-          >
+        <header class="mb-7 xl:mb-0 xl:w-90">
+          <picture>
             <source
-              media="(min-width:768px)"
-              srcset="assets/image-jeremy-large.webp"
+              media="(min-width:1220px)"
+              srcset="assets/image-jeremy-large@2x.webp"
             />
             <img
+              class="xl:w-90 xl:h-147.5"
               src="assets/image-jeremy-small.webp"
               alt="Photo of the Jeremy"
             />
@@ -90,29 +118,33 @@
         <img
           src="assets/pattern-curved-line-2.svg"
           alt="curve line"
-          class="mb-8"
+          class="mb-8 md:mb-7 xl:my-0 xl:ml-10 xl:mr-12.5"
         />
-        <section class="flex flex-col gap-6 text-center">
+        <section
+          class="flex flex-col gap-6 text-center xl:text-left xl:w-[95%]"
+        >
           <div class="flex flex-col gap-8">
             <p class="preset-2 text-neutral-0">
               It just <span class="preset-2-bold">works.</span>
             </p>
-            <p class="preset-3 text-neutral-200 text-center">
+            <p class="preset-3 text-neutral-200 text-center xl:text-left">
               “I really like how it is an all-in-one solution that handle many
               of the tasks that you would normally need separate tools to do the
               same job. This thing is a miracle worker.”
             </p>
           </div>
 
-          <div>
-            <p class="preset-4 text-neutral-0 text-center">JEREMY ROBINSON</p>
-            <p class="preset-7 text-neutral-200 text-center">CMO, FYLO</p>
+          <div class="text-center xl:text-left">
+            <p class="preset-4 text-neutral-0">JEREMY ROBINSON</p>
+            <p class="preset-7 text-neutral-200">CMO, FYLO</p>
           </div>
         </section>
       </main>
 
-      <footer class="pb-10 px-8">
-        <div class="flex flex-col gap-8 justify-center items-center">
+      <footer class="pb-10 px-8 relative after:footer-after xl:px-0">
+        <div
+          class="flex flex-col gap-8 justify-center items-center md:flex-row md:justify-between xl:w-[77%] xl:mx-auto"
+        >
           <img src="assets/logo.svg" alt="suite logo" />
           <p class="preset-8 text-neutral-500">Copyright - Suite</p>
 
